@@ -23,7 +23,7 @@ namespace CalculatorTest
         {
             if (b == 0)
             {
-                throw new ArgumentException("Cannot divide by zero.");
+                throw new ArgumentException("0 ga bo'lib bo'lmaydi!");
             }
             return a / b;
         }
@@ -37,7 +37,7 @@ namespace CalculatorTest
         {
             if (a < 0)
             {
-                throw new ArgumentException("Cannot calculate square root of a negative number.");
+                throw new ArgumentException("0 dan kichik sonni kvadrat ildizini hisoblab bolmaydi!");
             }
             return Math.Sqrt(a);
         }
