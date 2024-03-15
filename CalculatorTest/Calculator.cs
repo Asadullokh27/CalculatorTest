@@ -46,5 +46,17 @@ namespace CalculatorTest
         {
             return a % b;
         }
+
+        public static double Perimeter(double length, double width)
+        {
+            //Perimetrini ham hisoblasa boladi
+            return 2 * (length + width);
+        }
+
+        public static double Area(double length, double width)
+        {
+            //Yuzasini ham hisoblasa boladi
+            return length * width;
+        }
     }
 }

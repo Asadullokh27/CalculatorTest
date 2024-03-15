@@ -67,5 +67,23 @@ namespace Calculatorr.Test
             var result = Calculator.Modulus(a, b);
             Assert.Equal(expectedResult, result);
         }
+
+        [Theory]
+        [InlineData(4, 5, 18)] 
+        [InlineData(3, 3, 12)] 
+        public void TestPerimeter(double length, double width, double expectedPerimeter)
+        {
+            var result = Calculator.Perimeter(length, width);
+            Assert.Equal(expectedPerimeter, result);
+        }
+
+        [Theory]
+        [InlineData(4, 5, 20)] 
+        [InlineData(3, 3, 9)] 
+        public void TestArea(double length, double width, double expectedArea)
+        {
+            var result = Calculator.Area(length, width);
+            Assert.Equal(expectedArea, result);
+        }
     }
 }
